@@ -13,7 +13,7 @@ public class Webshop {
 
 	public Webshop(){
 		m_ContainerProdukte = new ContainerProdukte();
-		m_Besucher = new RechnungDarstellen(); // Setze den Besucher auf RechnungDarstellen, du kannst auch einen anderen Besucher verwenden
+		m_Besucher = new RechnungDarstellen(); // Setze den Besucher auf RechnungDarstellen
 	}
 
 	public void finalize() throws Throwable {
@@ -46,6 +46,11 @@ public class Webshop {
 
 		// Beispielhafte Verwendung des Besuchers
 		Besucher besucher = new WebseiteDarstellen();
+		webshop.m_Besucher = besucher;
+		webshop.produkteBesuchen();
+
+		// Beispielhafte Verwendung des Besuchers
+		besucher = new WarenkorbDarstellen();
 		webshop.m_Besucher = besucher;
 		webshop.produkteBesuchen();
 	}
