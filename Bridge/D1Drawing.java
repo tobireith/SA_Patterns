@@ -14,6 +14,10 @@ public class D1Drawing extends Drawing {
 		m_D1DrawingProgram = new D1DrawingProgram();
 	}
 
+	public D1Drawing(D1DrawingProgram program){
+		m_D1DrawingProgram = program;
+	}
+
 	public void drawCircle(double x, double y, double r) {
 		m_D1DrawingProgram.draw_a_blue_circle(x,y,r);
 	}
