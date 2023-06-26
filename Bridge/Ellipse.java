@@ -13,11 +13,9 @@ public class Ellipse extends Figure {
 	private double y1;
 	private double y2;
 	private double r;
-	private Drawing drawing;
 
 	public Ellipse(Drawing drawing, double x1, double x2, double y1, double y2, double r){
 		super(drawing);
-		this.drawing = drawing;
 		this.x1 = x1;
 		this.x2 = x2;
 		this.y1 = y1;
@@ -26,6 +24,6 @@ public class Ellipse extends Figure {
 	}
 
 	public void draw(){
-		drawing.drawEllipse(x1, x2, y1, y2, r);
+		super.getDrawing().drawEllipse(x1, x2, y1, y2, r);
 	}
 }//end Ellipse

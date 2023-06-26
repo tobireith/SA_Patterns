@@ -29,4 +29,8 @@ public abstract class Figure {
 	protected void drawLine(){
 
 	}
+
+	public Drawing getDrawing() {
+		return m_Drawing;
+	}
 }//end Figure
