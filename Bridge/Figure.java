@@ -14,23 +14,17 @@ public abstract class Figure {
 		m_Drawing = drawing;
 	}
 
-	public void draw(){
+	public abstract void draw();
 
+	protected void drawCircle(double x, double y, double r){
+		m_Drawing.drawCircle(x, y, r);
 	}
 
-	protected void drawCircle(){
-
+	protected void drawEllipse(double x1, double x2, double y1, double y2, double r){
+		m_Drawing.drawEllipse(x1, x2, y1, y2, r);
 	}
 
-	protected void drawEllipse(){
-
-	}
-
-	protected void drawLine(){
-
-	}
-
-	public Drawing getDrawing() {
-		return m_Drawing;
+	protected void drawLine(double x1, double x2, double y1, double y2){
+		m_Drawing.drawLine(x1, x2, y1, y2);
 	}
 }//end Figure

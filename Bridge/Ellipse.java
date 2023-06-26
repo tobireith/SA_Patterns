@@ -24,6 +24,6 @@ public class Ellipse extends Figure {
 	}
 
 	public void draw(){
-		super.getDrawing().drawEllipse(x1, x2, y1, y2, r);
+		drawEllipse(x1, x2, y1, y2, r);
 	}
 }//end Ellipse

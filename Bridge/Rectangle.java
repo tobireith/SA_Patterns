@@ -21,9 +21,9 @@ public class Rectangle extends Figure {
 	}
 
 	public void draw(){
-		super.getDrawing().drawLine(x, x, y, y+width);
-		super.getDrawing().drawLine(x, x+length, y, y);
-		super.getDrawing().drawLine(x, x+length, y+width, y+width);
-		super.getDrawing().drawLine(x+length, x+length, y, y+width);
+		drawLine(x, x, y, y+width);
+		drawLine(x, x+length, y, y);
+		drawLine(x, x+length, y+width, y+width);
+		drawLine(x+length, x+length, y, y+width);
 	}
 }//end Rectangle

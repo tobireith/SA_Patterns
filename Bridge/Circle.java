@@ -19,6 +19,6 @@ public class Circle extends Figure {
 	}
 
 	public void draw(){
-		super.getDrawing().drawCircle(x, y, r);
+		drawCircle(x, y, r);
 	}
 }//end Circle
