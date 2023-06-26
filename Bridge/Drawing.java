@@ -12,18 +12,15 @@ public abstract class Drawing {
 
 	}
 
-	public void finalize() throws Throwable {
-
-	}
-	public void drawCircle(){
+	public void drawCircle(double x, double y, double r){
 
 	}
 
-	public void drawEllipse(){
+	public void drawEllipse(double x1, double x2, double y1, double y2, double r){
 
 	}
 
-	public void drawLine(){
+	public void drawLine(double x1, double x2, double y1, double y2){
 
 	}
 }//end Drawing

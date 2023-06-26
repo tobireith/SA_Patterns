@@ -8,15 +8,12 @@ package Klausurvorbereitung.Bridge;
  */
 public abstract class Figure {
 
-	public Drawing m_Drawing;
+	private Drawing m_Drawing;
 
-	public Figure(){
-
+	public Figure(Drawing drawing){
+		m_Drawing = drawing;
 	}
 
-	public void finalize() throws Throwable {
-
-	}
 	public void draw(){
 
 	}

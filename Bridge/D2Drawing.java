@@ -11,21 +11,18 @@ public class D2Drawing extends Drawing {
 	public D2DrawingProgram m_D2DrawingProgram;
 
 	public D2Drawing(){
-
+		m_D2DrawingProgram = new D2DrawingProgram();
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-	public void drawCircle(){
-
+	public void drawCircle(double x, double y, double r){
+		m_D2DrawingProgram.drawRainbowCircle(x, y, r);
 	}
 
-	public void drawEllipse(){
-
+	public void drawEllipse(double x1, double x2, double y1, double y2, double r){
+		m_D2DrawingProgram.drawRainbowEllipse(x1, x2, y1, y2, r);
 	}
 
-	public void drawLine(){
-
+	public void drawLine(double x1, double x2, double y1, double y2){
+		m_D2DrawingProgram.drawRainbowLine(x1, x2, y1, y2);
 	}
 }//end D2Drawing

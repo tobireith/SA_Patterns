@@ -8,14 +8,25 @@ package Klausurvorbereitung.Bridge;
  */
 public class Rectangle extends Figure {
 
-	public Rectangle(){
+	private double length;
+	private double width;
+	private double x;
+	private double y;
+	private Drawing drawing;
 
+	public Rectangle(Drawing drawing, double length, double width, double x, double y){
+		super(drawing);
+		this.drawing = drawing;
+		this.length = length;
+		this.width = width;
+		this.x = x;
+		this.y = y;
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
 	public void draw(){
-
+		drawing.drawLine(x, x, y, y+width);
+		drawing.drawLine(x, x+length, y, y);
+		drawing.drawLine(x, x+length, y+width, y+width);
+		drawing.drawLine(x+length, x+length, y, y+width);
 	}
 }//end Rectangle
